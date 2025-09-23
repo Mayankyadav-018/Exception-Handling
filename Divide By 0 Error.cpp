@@ -1,0 +1,30 @@
+/* Name - Mayank Yadav
+   PRN - 24070123060
+   Class - ENTC A-3 */
+#include <iostream>
+using namespace std;
+
+int main(){
+    float n1,n2,ans;
+    cout << "Enter values of numbers 1 & 2:";
+    cin >> n1 >> n2;
+    try{
+        if(n2==0){
+            throw n2;
+        }
+        else{
+            ans=n1/n2;
+            cout << "Answer =" << ans << endl;
+        }
+    }
+    catch(float num){
+        cout << "\nERROR: Division by"<<num<<endl;
+    }
+    return 0;
+}
+
+
+
+/* output:
+Enter values of numbers 1 & 2:4 8
+Answer =0.5 */
